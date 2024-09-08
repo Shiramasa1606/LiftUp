@@ -37,3 +37,9 @@ La aplicación está desarrollada con HTML5, CSS3 y JavaScript, utilizando frame
 - **JavaScript**
 - **HTML5**
 - **CSS3**
+
+
+Equipo de trabajo:
+-Benjamín Ignacio Correa Vergara
+-Bastián Enrique Hidalgo Covarrubias
+-Nico Lucy Medina Jiménez
