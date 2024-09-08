@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Proyecto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/crear-modificar-proyecto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="header-container">
+        <div class="back-button-wrapper">
+            <a href="#" class="btn btn-link">
+                <img src="Images/Arrow left-circle.png" alt="Regresar" class="back-button">
+            </a>
+        </div>
+        <h1>Crear Proyecto</h1>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Título del Proyecto -->
+        <div class="edit-container mb-4">
+            <h2>Título del Proyecto</h2>
+            <input type="text" class="form-control" placeholder="Nombre del Proyecto">
+            <small class="form-text text-muted">Nombre del proyecto</small>
+        </div>
+
+        <!-- Categoría del Proyecto -->
+        <div class="edit-container mb-4">
+            <h2>Categoría del Proyecto</h2>
+            <select class="form-control">
+                <option>Seleccione Una</option>
+                <!-- Agregar opciones aquí -->
+            </select>
+        </div>
+
+        <!-- Descripción del Proyecto -->
+        <div class="edit-container mb-4">
+            <h2>Descripción del Proyecto</h2>
+            <textarea class="form-control" rows="4" placeholder="Escriba una breve descripción del proyecto"></textarea>
+            <div class="clear-button-container">
+                <button id="clear-description" class="btn btn-dark-red">Limpiar Descripción</button>
+            </div>
+        </div>
+
+		<!-- Imágenes del Proyecto -->
+		<div class="edit-container mb-4">
+			<h2>Imágenes del Proyecto</h2>
+			<div class="upload-container">
+				<label for="images-upload" class="upload-label">Subir imágenes o arrastrarlas aquí</label>
+				<input type="file" id="images-upload" multiple accept="image/*" style="display:none;">
+				<div id="images-preview" class="preview-container"></div>
+				<button id="clear-images" class="btn btn-dark-red">Limpiar Imágenes</button>
+			</div>
+		</div>
+
+		<!-- Videos del Proyecto (Opcional) -->
+		<div class="edit-container mb-4">
+			<h2>Videos del Proyecto (Opcional)</h2>
+			<div class="upload-container">
+				<label for="videos-upload" class="upload-label">Subir videos o arrastrarlos aquí</label>
+				<input type="file" id="videos-upload" multiple accept="video/*" style="display:none;">
+				<div id="videos-preview" class="preview-container"></div>
+				<button id="clear-videos" class="btn btn-dark-red">Limpiar Videos</button>
+			</div>
+		</div>
+
+
+        <!-- Fondos Objetivos -->
+        <div class="edit-container mb-4">
+            <h2>Fondos Objetivos</h2>
+            <div class="d-flex align-items-center">
+                <input type="text" class="form-control" placeholder="$Valor">
+                <button class="btn btn-outline-secondary ml-2">X</button>
+            </div>
+        </div>
+
+        <!-- Fecha Límite del Proyecto (Opcional) -->
+        <div class="date-container p-4 mb-4">
+            <h5>Fecha límite del proyecto (opcional)</h5>
+            <h2>Ingresar Fecha</h2>
+            <input type="text" id="date-picker" class="form-control date-input" placeholder="dd/mm/yyyy" readonly>
+            <div class="text-center mt-3">
+                <button id="clear-date" class="btn btn-dark-red">Cancelar</button>
+            </div>
+        </div>
+
+        <!-- Botones de Acción -->
+        <div class="button-group text-center mb-4">
+            <button class="btn btn-dark-green">Guardar</button>
+            <button class="btn btn-dark-red">Eliminar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text-center">© 2024 LiftUp Inc.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="Scripts/preview.js"></script>
+</body>
+</html>

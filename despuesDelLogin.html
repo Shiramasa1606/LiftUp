@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiftUp</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Styles/prePostLogin.css">
+    <link rel="stylesheet" href="Styles/SidebarStyles/sidebarProyecto.css"> <!-- Estilos para la barra lateral -->
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <div class="d-flex align-items-center">
+            <img src="Images/Star Icon.svg" alt="LiftUp Logo" class="logo">
+            <h1 class="ms-2">LiftUp</h1>
+        </div>
+        <div class="d-flex align-items-center">
+            <img src="Images/Search Icon.svg" alt="Buscar" class="icon ms-3">
+            <img src="Images/Profile Icon.svg" id="profileToggle" alt="Perfil" class="icon ms-3 profile">
+            <img src="Images/Sidebar Icon.svg" id="sidebarToggle" alt="Barra Lateral" class="icon ms-3">
+        </div>
+    </header>
+
+    <!-- Overlay -->
+    <div class="content-overlay" id="content-overlay"></div>
+
+    <!-- Carrusel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x500" class="d-block w-100" alt="Imagen">
+                <div class="carousel-caption d-none d-md-block text-start mb-5">
+                    <h5>Descripción de la Imagen</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x700" class="d-block w-100" alt="Imagen">
+                <div class="carousel-caption d-none d-md-block text-start mb-5">
+                    <h5>Otra Descripción</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Segundo Header con redes sociales -->
+    <section class="d-flex justify-content-between align-items-center p-3 border-bottom mt-4">
+        <div class="d-flex align-items-center">
+            <img src="Images/Icon.svg" alt="LiftUp Logo" class="logo">
+        </div>
+        <div class="d-flex">
+            <img src="Images/X Logo.svg" alt="X" class="social-icon ms-3">
+            <img src="Images/Logo Instagram.svg" alt="Instagram" class="social-icon ms-3">
+            <img src="Images/Logo YouTube.svg" alt="YouTube" class="social-icon ms-3">
+            <img src="Images/LinkedIn.svg" alt="LinkedIn" class="social-icon ms-3">
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <div class="container-custom">
+        <div class="content-section">
+            <h2>Conoce más</h2>
+            <ul>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Términos de Uso</a></li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Sobre Nosotros</h2>
+            <ul>
+                <li>LiftUp Inc.</li>
+                <li>4623 Kaela Orchard, City. Bednarchester</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Ponte en Contacto con Nosotros</h2>
+            <ul>
+                <li><p><a href="mailto:info.contacto@liftup.com">info.contacto@liftup.com</a></p></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 border-top">
+        © 2024 LiftUp Inc.
+    </footer>
+
+    <!-- Sidebar de Proyectos -->
+    <div id="projectsSidebar" class="sidebar">
+        <h2>Proyectos</h2>
+        <ul>
+            <li><a href="crearProyecto.html" class="sidebar-btn">
+                <img src="Images/file-plus.svg" alt="Nuevo Proyecto" class="sidebar-icon">
+                Nuevo Proyecto
+            </a></li>
+            <li><button class="sidebar-btn">Placeholder 1</button></li>
+            <li><button class="sidebar-btn">Placeholder 2</button></li>
+            <li><button class="sidebar-btn">Placeholder 3</button></li>
+        </ul>
+    </div>
+
+    <!-- Sidebar del Perfil -->
+    <div id="profileSidebar" class="profile-sidebar">
+        <div class="profile-header">
+            <img src="Images/Profile Icon.svg" alt="Foto de Perfil" class="profile-pic">
+            <p class="profile-name">Nombre del Usuario</p>
+            <p class="profile-email">correo@ejemplo.com</p>
+        </div>
+        <div class="profile-nav">
+            <a href="pefil.html" class="sidebar-btn">
+                <img src="Images/person-fill.svg" alt="Mi Perfil" class="sidebar-icon">
+                Mi Perfil
+            </a>
+            <a href="misProyectos.html" class="sidebar-btn">
+                <img src="Images/file-earmark.svg" alt="Mis Proyectos" class="sidebar-icon">
+                Mis Proyectos
+            </a>
+            <a href="proyectosSeguidos.html" class="sidebar-btn">
+                <img src="Images/bookmarks.svg" alt="Proyectos Seguidos" class="sidebar-icon">
+                Proyectos Seguidos
+            </a>
+            <a href="#" class="sidebar-btn">
+                <img src="Images/gear-fill.svg" alt="Configuración" class="sidebar-icon">
+                Configuración
+            </a>
+            <a href="#" class="sidebar-btn">
+                <img src="Images/envelope.svg" alt="Contáctanos" class="sidebar-icon">
+                Contáctanos
+            </a>
+            <a href="#" class="sidebar-btn">
+                <img src="Images/question-circle.svg" alt="Ayuda" class="sidebar-icon">
+                Ayuda y FAQ
+            </a>
+            <a href="antesDelLogin.html" class="sidebar-btn">
+                <img src="Images/box-arrow-right.svg" alt="Cerrar Sesión" class="sidebar-icon">
+                Cerrar Sesión
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/sidebarManager.js"></script> <!-- Asegúrate de que el script se carga al final -->
+</body>
+</html>

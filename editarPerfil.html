@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/editarPerfil.css">
+</head>
+<body>
+    <!-- Header con botón de regreso y nombre del proyecto -->
+    <header class="header-container">
+        <a href="perfil.html" class="btn btn-link back-button-wrapper">
+            <img src="Images/Arrow left-circle.png" alt="Regresar" class="back-button">
+        </a>
+        <h1 class="project-title">Editar Perfil</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container mt-5">
+        <!-- Contenido de la página -->
+        <div class="d-flex flex-column align-items-center">
+            <!-- Nombre de perfil -->
+            <div class="edit-container mb-4">
+                <h2 class="small-header">Nombre de perfil</h2>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">X</button>
+                    </div>
+                </div>
+                <small class="form-text text-muted">El nombre que se muestra en tu perfil</small>
+            </div>
+
+            <!-- Avatar -->
+            <div class="edit-container mb-4">
+                <h2 class="small-header">Avatar</h2>
+                <div class="d-flex flex-column align-items-center">
+                    <img src="Images/Profile Icon.svg" alt="Foto de perfil" class="avatar-img">
+                    <div class="mt-2">
+                        <input type="file" class="form-control-file mb-2">
+                        <small class="form-text text-muted">Max File Size 10MB.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biografía -->
+            <div class="edit-container mb-4">
+                <h2 class="small-header">Biografía</h2>
+                <textarea class="form-control" rows="4" placeholder="Placeholder text"></textarea>
+            </div>
+
+            <!-- Sitios Web/Redes Sociales -->
+            <div class="edit-container mb-4">
+                <h2 class="small-header">Sitios Web/Redes Sociales</h2>
+                <button class="btn btn-dark-blue">Añadir</button>
+            </div>
+
+            <!-- Botón para guardar los cambios -->
+            <div class="save-button-container text-center">
+                <button class="btn btn-dark-green">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 border-top">
+        © 2024 LiftUp Inc.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

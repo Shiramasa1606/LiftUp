@@ -1,0 +1,68 @@
+/* Sidebar */
+.sidebar, .profile-sidebar, #filter-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Inicialmente fuera de la pantalla */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar.open, .profile-sidebar.open, #filter-sidebar.open {
+    right: 0;
+}
+
+.sidebar-header h2, .sidebar-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: center; /* Centra los títulos */
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Para centrar el rango de presupuesto */
+.range-slider {
+    width: 80%; /* Ajusta el ancho del slider */
+    margin: 0 auto; /* Asegúrate de que esté centrado */
+}
+
+/* Overlay */
+.content-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto por defecto */
+    z-index: 999;
+}
+
+/* Lista de checkboxes en Estado y Tipo de Proyecto */
+.checkbox-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Asegura que las etiquetas de checkbox estén alineadas a la izquierda */
+}
+
+.checkbox-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-list input[type="checkbox"] {
+    margin-right: 10px;
+}

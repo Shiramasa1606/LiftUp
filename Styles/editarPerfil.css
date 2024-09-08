@@ -1,0 +1,172 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para centrar el título debajo del botón */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 40px; /* Espacio entre el header y el contenedor principal */
+    position: relative;
+    padding-top: 60px; /* Espacio para el botón de regreso */
+}
+
+.back-button-wrapper {
+    position: absolute;
+    top: 20px; /* Ajusta el espacio superior del botón */
+    left: 20px; /* Ajusta el espacio izquierdo del botón */
+}
+
+.back-button {
+    width: 30px; /* Tamaño del botón de regreso */
+    height: 30px; /* Tamaño del botón de regreso */
+}
+
+.project-title {
+    font-size: 2rem; /* Tamaño del título del proyecto */
+    margin: 20px 0 0; /* Espacio arriba del título */
+    text-align: center; /* Centra el texto del título */
+}
+
+.edit-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
+}
+
+.avatar-img {
+    width: 100px; /* Ajusta el tamaño según necesites */
+    height: 100px; /* Ajusta el tamaño según necesites */
+    border-radius: 50%;
+}
+
+.small-header {
+    font-size: 1.25rem; /* Tamaño de fuente reducido para los headers */
+}
+
+.btn-dark-blue {
+    background-color: #003366; /* Color azul más oscuro */
+    border-color: #003366;
+    color: white;
+}
+
+.btn-dark-blue:hover {
+    background-color: #002244; /* Color más oscuro para hover */
+    border-color: #002244;
+}
+
+.btn-dark-green {
+    background-color: #004d00; /* Color verde oscuro */
+    border-color: #004d00;
+    color: white;
+}
+
+.btn-dark-green:hover {
+    background-color: #003b00; /* Color más oscuro para hover */
+    border-color: #003b00;
+}
+
+/* Estilizar el input de archivos */
+.form-control-file {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40px; /* Ajusta el tamaño según necesites */
+}
+
+.form-control-file::before {
+    content: 'Subir archivo';
+    display: inline-block;
+    background: #003366;
+    color: white;
+    border: 1px solid #003366;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 28px; /* Ajusta para centrar verticalmente el texto */
+}
+
+.form-control-file input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.form-control-file:hover::before {
+    background: #002244;
+}
+
+.save-button-container {
+    margin: 20px 0; /* Ajusta el margen según necesites */
+}
+
+/* Footer styling */
+footer {
+    background-color: #f1f1f1;
+    margin-top: auto;
+    padding: 10px 0; /* Asegura que el footer tenga un tamaño adecuado */
+}
+
+/* Ajustar margen superior del contenedor principal */
+.container {
+    margin-top: 40px; /* Ajusta el margen superior para separar el contenedor del header */
+}
+
+/* Estilos de la Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Inicialmente fuera de la pantalla */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar-header h2, .sidebar-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-section ul li {
+    margin-bottom: 10px;
+}
+
+.range-slider {
+    width: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

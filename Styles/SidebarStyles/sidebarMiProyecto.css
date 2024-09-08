@@ -1,0 +1,115 @@
+/* General Overlay Styles */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Initially hidden */
+    z-index: 999;
+}
+
+/* Sidebar Styles */
+.sidebar, .profile-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Sidebar open */
+.sidebar.open, .profile-sidebar.open {
+    right: 0; /* Slide in from the right */
+}
+
+/* Profile Sidebar Specific Styles */
+.profile-sidebar {
+    width: 300px;
+    right: -300px; /* Initially hidden */
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.profile-email {
+    color: #6c757d;
+    margin: 0;
+}
+
+.profile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-nav a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color */
+    background-color: transparent; /* Transparent background */
+    border-bottom: 1px solid #ddd; /* Bottom border for separation */
+    padding: 10px;
+    text-align: center; /* Center text */
+    display: block; /* Block display for the full width */
+}
+
+.profile-nav a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Overlay */
+.content-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Hidden by default */
+    z-index: 500;
+}
+
+/* Sidebar Buttons */
+#project-sidebar .btn,
+#profile-sidebar .btn {
+    margin-bottom: 15px; /* Vertical space between buttons */
+    width: 100%; /* Full width buttons */
+    padding: 10px;
+    text-align: center; /* Center text */
+    border: none; /* Remove default border */
+}
+
+#profile-sidebar .btn {
+    background-color: transparent; /* Transparent background for profile buttons */
+    border-bottom: 1px solid #ddd; /* Border for separation */
+    border-radius: 0; /* No rounded corners */
+}
+
+/* Additional styles for profile sidebar buttons */
+#profile-sidebar .btn:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
