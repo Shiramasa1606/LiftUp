@@ -9,7 +9,6 @@
 - [Análisis de las Funcionalidades](#análisis-de-las-funcionalidades)
 - [Prototipado en Figma](#prototipado-en-figma)
 - [Maquetación Responsiva](#maquetación-responsiva)
-- [Formularios y Validación](#formularios-y-validación)
 - [Tecnologías](#tecnologías)
 
 ## Análisis de las Funcionalidades
@@ -27,7 +26,7 @@
 
 ## Prototipado en Figma
 
-[Enlace al prototipo](#)
+[Enlace al prototipo](https://www.figma.com/design/730k3s7ZCLnfn2sfREVtXU/Figma-basics?node-id=1669-162202&t=cXSXps7wV6DbNT9v-1)
 
 ## Maquetación Responsiva
 
@@ -38,3 +37,9 @@ La aplicación está desarrollada con HTML5, CSS3 y JavaScript, utilizando frame
 - **JavaScript**
 - **HTML5**
 - **CSS3**
+
+
+Equipo de trabajo:
+-Benjamín Ignacio Correa Vergara
+-Bastián Enrique Hidalgo Covarrubias
+-Nico Lucy Medina Jiménez
