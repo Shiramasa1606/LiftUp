@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/paginaProyecto.css">
+    <link rel="stylesheet" href="Styles/SidebarStyles/sidebarMiProyecto.css">
+    <script src="Scripts/regresar.js" defer></script>
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <a href="despuesDelLogin.html" id="backButton" class="btn btn-link">
+            <img src="Images/Arrow left-circle.png" alt="Regresar" class="icon">
+        </a>
+        <div class="d-flex align-items-center">
+            <img src="Images/Search Icon.svg" alt="Buscar" class="icon ms-3">
+            <img src="Images/Profile Icon.svg" id="profileToggle" alt="Perfil" class="icon ms-3">
+            <img src="Images/Sidebar Icon.svg" id="sidebarToggle" alt="Barra Lateral" class="icon ms-3">
+        </div>
+    </header>
+
+    <!-- Sidebar de Página de Proyecto -->
+    <div id="project-sidebar" class="sidebar">
+        <a id="edit-project" class="btn btn-primary" href="modificarProyecto.html">Editar Proyecto</a>
+        <a id="moderate-project" class="btn btn-primary" href="#">Moderar Proyecto</a>
+        <a id="sponsor-project" class="btn btn-primary" href="donar.html">Patrocinar Proyecto</a>
+    </div>
+
+    <!-- Sidebar de Perfil -->
+    <div id="profileSidebar" class="profile-sidebar sidebar">
+        <div class="profile-header">
+            <img src="Images/Profile Icon.svg" alt="Foto de Perfil" class="profile-pic">
+            <p class="profile-name">Nombre del Usuario</p>
+            <p class="profile-email">correo@ejemplo.com</p>
+        </div>
+        <div class="profile-nav">
+            <a href="pefil.html" class="sidebar-btn">
+                <img src="Images/person-fill.svg" alt="Mi Perfil" class="sidebar-icon">
+                Mi Perfil
+            </a>
+            <a href="misProyectos.html" class="sidebar-btn">
+                <img src="Images/file-earmark.svg" alt="Mis Proyectos" class="sidebar-icon">
+                Mis Proyectos
+            </a>
+            <a href="proyectosSeguidos.html" class="sidebar-btn">
+                <img src="Images/bookmarks.svg" alt="Proyectos Seguidos" class="sidebar-icon">
+                Proyectos Seguidos
+            </a>
+            <a href="#" class="sidebar-btn">
+                <img src="Images/gear-fill.svg" alt="Configuración" class="sidebar-icon">
+                Configuración
+            </a>
+            <a href="#" class="sidebar-btn">
+                <img src="Images/envelope.svg" alt="Contáctanos" class="sidebar-icon">
+                Contáctanos
+            </a>
+            <a href="#" class="sidebar-btn">
+                <img src="Images/question-circle.svg" alt="Ayuda" class="sidebar-icon">
+                Ayuda y FAQ
+            </a>
+            <a href="antesDelLogin.html" class="sidebar-btn">
+                <img src="Images/box-arrow-right.svg" alt="Cerrar Sesión" class="sidebar-icon">
+                Cerrar Sesión
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar de Filtros -->
+    <div id="filter-sidebar" class="filter-sidebar sidebar">
+        <h2>Filtros</h2>
+        <!-- Agrega las opciones de filtro aquí -->
+    </div>
+
+    <!-- Overlay -->
+    <div id="contentOverlay" class="content-overlay"></div>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <!-- Header del proyecto y carrusel de imágenes -->
+        <div class="project-header">
+            <h1>Nombre del Proyecto</h1>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1200x500" class="d-block w-100" alt="Imagen del Proyecto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x500" class="d-block w-100" alt="Imagen del Proyecto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1200x500" class="d-block w-100" alt="Imagen del Proyecto 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Cantidad Recaudada -->
+        <div class="revenue-container mt-4">
+            <h2>Cantidad Recaudada</h2>
+            <div class="revenue-amount">$1,500 US$</div>
+            <div class="progress-bar-container">
+                <div class="progress">
+                    <div id="progress-bar" class="progress-bar" style="width: 50%;"></div>
+                </div>
+                <div class="progress-details">
+                    <span id="progress-percentage">50%</span>
+                    <span id="progress-goal">Objetivo: $3,000 US$</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descripción del Proyecto -->
+        <div class="description-container mt-4">
+            <h3>Descripción del Proyecto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Información del Creador del Proyecto -->
+        <div class="creator-container mt-4 text-center">
+            <img src="https://via.placeholder.com/40" alt="Imagen del Creador" class="creator-image">
+            <span class="creator-name">Usuario que creó el proyecto</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 border-top">
+        © 2024 LiftUp Inc.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sidebar Manager JS -->
+    <script src="Scripts/sidebarManager.js"></script>
+
+</body>
+</html>
