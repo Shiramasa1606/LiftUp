@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+
+/* Contenedor de donación */
+.donation-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.amount-box {
+    margin-bottom: 20px;
+}
+
+.donation-container input.form-control {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-evenly; /* Alinear botones de manera equitativa */
+    margin-top: 20px; /* Espacio entre botones y la caja de input */
+}
+
+.btn-dark-red {
+    background-color: #b22222;
+    color: white;
+}
+
+.btn-dark-green {
+    background-color: #006400;
+    color: white;
+}
+
+/* Footer pegado al fondo */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}

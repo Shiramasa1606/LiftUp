@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Style */
+.header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Añadido para separación en vistas de escritorio */
+}
+
+.header .container {
+    max-width: 1200px;
+}
+
+.header h1 {
+    font-size: 1.5rem; /* Tamaño del texto del encabezado */
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+/* Card Style */
+.register-card {
+    max-width: 500px; /* Tamaño máximo del contenedor */
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Back Button */
+.back-icon {
+    width: 30px;
+}
+
+/* Form Fields */
+.form-label {
+    font-size: 14px;
+}
+
+.input-group input {
+    padding-right: 40px;
+}
+
+.eye-icon {
+    width: 20px; /* Tamaño del ícono del ojo */
+}
+
+.toggle-password {
+    border: none;
+    background: transparent;
+    width: 40px; /* Tamaño del botón del ojo */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Styles */
+.btn-dark {
+    background-color: #333;
+    border: none;
+    color: #fff;
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 575.98px) {
+    .register-card {
+        margin: 0 15px; /* Margen horizontal en pantallas pequeñas */
+    }
+
+    .header {
+        padding: 10px 0;
+        margin-bottom: 10px; /* Menor margen en pantallas pequeñas */
+    }
+
+    .header h1 {
+        font-size: 1.25rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
+
+/* Adjustments for Medium and Large Screens */
+@media (min-width: 576px) {
+    .register-card {
+        margin: 0 auto; /* Centra el contenedor en pantallas más grandes */
+    }
+
+    .header {
+        padding: 15px 0;
+        margin-bottom: 50px; /* Mayor margen en pantallas grandes */
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* Tamaño de fuente más grande en pantallas grandes */
+    }
+}

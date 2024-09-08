@@ -1,0 +1,99 @@
+/* Logo dimensions */
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Increase size for back icon */
+.back-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Profile photo dimensions */
+.profile-photo {
+    width: 75%; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 50%;
+    margin-bottom: 5px; /* Menos separación entre la imagen y el nombre */
+}
+
+/* Estilo para el contenedor de editar perfil y nombre del perfil */
+.profile-container .text-center.mb-4:first-of-type {
+    margin-bottom: 0; /* Elimina el margen inferior para acercar el texto a la foto */
+}
+
+.profile-container h2 {
+    margin-top: 5px; /* Ajusta el espacio entre la foto y el nombre del perfil */
+}
+
+/* Social icon dimensions */
+.social-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Estilo del contenedor principal del perfil */
+.profile-container {
+    width: 390px;
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo del encabezado y párrafos */
+.profile-container h3, .profile-container h2 {
+    margin-bottom: 20px; /* Espacio debajo de los encabezados */
+    font-size: 1.75rem; /* Tamaño del encabezado */
+}
+
+.profile-container p {
+    font-size: 1.25rem;
+}
+
+/* Estilo del enlace dentro de las redes sociales */
+.profile-container a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.profile-container a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Estilo para el contenedor del icono de editar perfil y texto */
+.profile-container .text-center div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    
+}
+
+/* Carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sin subrayado ni resaltado para los enlaces específicos */
+.edit-profile-link {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Hereda el color del elemento padre o especifica uno si es necesario */
+}
+
+/* Asegúrate de que los estilos del enlace no se vean afectados por otros estilos */
+.edit-profile-link:focus, .edit-profile-link:hover {
+    text-decoration: none; /* Asegura que no haya subrayado en hover/focus */
+    color: #007bff; /* O el color que desees para el enlace en hover/focus */
+}
+
+/* Footer pegado al fondo */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
