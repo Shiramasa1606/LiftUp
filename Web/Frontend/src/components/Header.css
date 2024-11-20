@@ -1,0 +1,55 @@
+/* Header.css */
+
+.toolbar {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+  position: relative;
+}
+
+.header-title {
+  font-size: 24px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Negrita */
+  color: black; /* Color del texto */
+  position: absolute; /* Para posicionar el título independientemente de otros elementos */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centrar completamente (horizontal y verticalmente) */
+  top: 50%; /* Centra verticalmente */
+  margin-top: 4px; /* Ajusta el margen superior para evitar solapamientos */
+}
+
+.logo {
+  height: 40px; /* Altura del logo */
+  cursor: pointer; /* Cursor en forma de mano al pasar sobre el logo */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente el logo */
+  margin-right: auto; /* Alinear a la izquierda */
+}
+
+/* Estilos para la barra de búsqueda */
+ion-searchbar {
+  margin-left: 8px; /* Espaciado entre el ícono de búsqueda y la barra */
+  transition: none; /* Elimina la transición */
+  width: 200px; /* Ancho fijo para que esté siempre visible */
+  opacity: 1; /* Siempre visible */
+}
+
+/* Estilos responsivos */
+@media (max-width: 576px) { /* Para dispositivos móviles */
+  .header-title {
+    font-size: 18px; /* Tamaño más pequeño para móviles */
+    top: 50%; /* Mantiene el centrado vertical */
+    margin-top: 2px; /* Ajusta el margen superior en móviles */
+  }
+
+  .logo {
+    height: 30px; /* Ajusta el tamaño del logo en móviles */
+  }
+
+  ion-searchbar {
+    width: 150px; /* Tamaño reducido en móviles */
+  }
+}

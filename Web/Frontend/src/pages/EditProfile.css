@@ -1,0 +1,24 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    width: 100%; /* Ocupar todo el ancho */
+  }
+  
+  .form-container ion-item {
+    width: 100%; /* Asegúrate de que los elementos ocupen todo el ancho disponible */
+    max-width: 500px; /* Limita el ancho máximo si es necesario */
+  }
+  
+  .social-title {
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 10px;
+    font-size: 20px; /* Ajustar el tamaño de fuente si es necesario */
+    font-weight: bold; /* Hacer el texto más destacado */
+  }
+  
+  .form-container ion-button {
+    margin-top: 20px; /* Espaciado entre los campos y el botón */
+  }
+  

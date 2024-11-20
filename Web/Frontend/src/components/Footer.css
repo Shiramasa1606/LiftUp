@@ -1,0 +1,33 @@
+.footer {
+  background-color: black; /* Cambia según sea necesario */
+  border-top: 1px solid #ccc; /* Línea superior */
+  padding: 16px; /* Espaciado interno */
+  text-align: center; /* Centrar texto */
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between; /* Espacio entre el logo y los íconos */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.footer-logo .logo {
+  width: 40px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px; /* Espacio entre los íconos de redes sociales */
+  margin-left: auto; /* Alinear los íconos a la derecha */
+}
+
+.social-icon {
+  font-size: 40px; /* Ajusta el tamaño de los íconos de redes sociales */
+  color: white; /* Cambia el color si es necesario */
+  cursor: pointer; /* Cambia el cursor para indicar que son clicables */
+}
+
+.footer-copyright {
+  margin-top: 10px; /* Espaciado arriba del copyright */
+}
