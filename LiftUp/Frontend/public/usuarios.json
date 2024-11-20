@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Pepito Pérez",
+      "sponsoredProjects": 5,
+      "avatarUrl": "https://via.placeholder.com/150",
+      "bio": "Esta es la biografía del usuario.",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/usuario",
+        "twitter": "https://www.twitter.com/usuario",
+        "instagram": "https://www.instagram.com/usuario",
+        "linkedin": "https://www.linkedin.com/in/usuario",
+        "project": "https://www.proyecto.com/usuario"
+      }
+    }
+  ]

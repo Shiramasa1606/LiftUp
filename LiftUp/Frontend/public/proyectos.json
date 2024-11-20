@@ -1,0 +1,64 @@
+[
+	{
+	  "id": 1,
+	  "nombre": "Proyecto A",
+	  "recaudado": 1500,
+	  "meta": 3000,
+	  "categoria": "Prototipo",
+	  "esFavorito": false,
+	  "esSeguido": true,
+	  "idCreador": 1
+	},
+	{
+	  "id": 2,
+	  "nombre": "Proyecto B",
+	  "recaudado": 500,
+	  "meta": 2000,
+	  "categoria": "Concepto",
+	  "esFavorito": true,
+	  "esSeguido": false,
+	  "idCreador": 2
+	},
+	{
+	  "id": 3,
+	  "nombre": "Proyecto C",
+	  "recaudado": 2000,
+	  "meta": 5000,
+	  "categoria": "Producción",
+	  "esFavorito": false,
+	  "esSeguido": false,
+	  "idCreador": 3
+	},
+	{
+	  "id": 4,
+	  "nombre": "Proyecto D",
+	  "recaudado": 4500,
+	  "meta": 10000,
+	  "categoria": "Caridad",
+	  "esFavorito": true,
+	  "esSeguido": true,
+	  "idCreador": 4
+	},
+	{
+	  "id": 5,
+	  "nombre": "Proyecto E",
+	  "recaudado": 800,
+	  "meta": 2500,
+	  "categoria": "Prototipo",
+	  "novedad": true,
+	  "esFavorito": false,
+	  "esSeguido": true,
+	  "idCreador": 5
+	},
+	{
+	  "id": 6,
+	  "nombre": "Proyecto F",
+	  "recaudado": 300,
+	  "meta": 1000,
+	  "categoria": "Concepto",
+	  "esFavorito": true,
+	  "esSeguido": false,
+	  "idCreador": 2
+	}
+  ]
+  

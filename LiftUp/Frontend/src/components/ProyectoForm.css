@@ -1,0 +1,18 @@
+/* ProyectoForm.css */
+
+/* Centrar el contenedor del formulario */
+.centered-form {
+	display: flex;
+	justify-content: center; /* Centra horizontalmente */
+	align-items: center; /* Centra verticalmente */
+	height: 100vh; /* Ocupa toda la altura de la ventana */
+	padding: 0; /* Evitar relleno adicional */
+  }
+  
+  /* Ajustar el estilo de la tarjeta */
+  .centered-card {
+	width: 90%; /* Ancho del formulario */
+	max-width: 600px; /* Ancho máximo */
+	margin: 0 auto; /* Centrar horizontalmente el contenedor */
+  }
+  
